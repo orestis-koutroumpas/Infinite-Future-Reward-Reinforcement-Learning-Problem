@@ -1,4 +1,4 @@
-# Reinforcement Learning Optimal Policy Estimation
+# Reinforcement Learning Optimal Policy Estimation with Infinite future reward
 
 This repository implements the numerical and data-driven approaches to solve the infinite future reward with exponential discount factor γ = 0.8 reinforcement learning problem. Specifically, it computes the optimal functions 𝜈1(𝑆) and 𝜈2(𝑆) using numerical methods, and then applies a data-driven approach to obtain approximations 𝜔(𝑢(𝑋,𝜃)) using neural networks. The data-driven approach utilizes two sets of pairs, with the functions [A1] and [C1] applied for approximation.
 
