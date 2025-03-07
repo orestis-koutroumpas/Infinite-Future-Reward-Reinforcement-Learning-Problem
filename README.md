@@ -81,7 +81,7 @@ The results demonstrate that the neural network approximations converge well to 
 The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) with [A1].
 
    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
-      <img src="screenshots/curve_A1.png" alt="Learning Curve A1" width="90%" />
+      <img src="screenshots/curve_A1.png" alt="Learning Curve A1" width="80%" />
    </div>
 
 #### 2. Learning curve of 𝑢(𝑋,𝜃^𝑗) using [A1] and [C1]
@@ -89,7 +89,7 @@ The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) wit
 The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) with [C1].
 
    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
-      <img src="screenshots/curve_C1.png" alt="Learning Curve C2" width="90%" />
+      <img src="screenshots/curve_C1.png" alt="Learning Curve C2" width="80%" />
    </div>
 
 #### 3. Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
