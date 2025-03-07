@@ -76,16 +76,23 @@ The results demonstrate that the neural network approximations converge well to 
 
 ### Results
 
-#### 1. Learning curve of 𝑢(𝑋,𝜃1) using [A1] and [C1]
+#### 1. Learning curve of 𝑢(𝑋,𝜃^𝑗) using [A1]
 
-The following plots shows the learning curve for 𝜈1(𝑆) with [A1] and [C1].
+The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) with [A1].
 
    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
-      <img src="screenshots/curve1_A1.png" alt="Learning Curve A1" width="45%" />
-      <img src="screenshots/curve1_C1.png" alt="Learning Curve C2" width="45%" />
+      <img src="screenshots/curve_A1.png" alt="Learning Curve A1" width="90%" />
    </div>
 
-#### 2. Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
+#### 2. Learning curve of 𝑢(𝑋,𝜃^𝑗) using [A1] and [C1]
+
+The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) with [C1].
+
+   <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+      <img src="screenshots/curve_C1.png" alt="Learning Curve C2" width="90%" />
+   </div>
+
+#### 3. Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
 
 The following plots show the approximations for 𝜈1(𝑆) and 𝜈2(𝑆) obtained from both the numerical method and the neural network (NN) approximation.
 
@@ -105,7 +112,7 @@ The black curve represents the numerical solution, while the blue and red curves
 
 Neural networks approximate the numerical solution very well in [-5,5], but outside this range they show divergence.
 
-#### 3. Comparison of Numerical and Neural Network Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
+#### 4. Comparison of Numerical and Neural Network Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
 
 This graph shows the comparison between the numerical solutions and the neural network approximations for both 𝜈1(𝑆) and 𝜈2(𝑆). 
 
@@ -113,7 +120,7 @@ This graph shows the comparison between the numerical solutions and the neural n
       <img src="screenshots/both.png" alt="Approximation for both" width="90%" />
    </div>
 
-#### 4. Optimal Action Policy
+#### 5. Optimal Action Policy
 
 Finally, the optimal action policy based on the values of 𝜈1(𝑆) and 𝜈2(𝑆) is shown below.  The policy chooses 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡) and 𝑎𝑡=2 otherwise.
 
