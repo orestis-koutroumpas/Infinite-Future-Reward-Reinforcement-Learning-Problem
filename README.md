@@ -20,7 +20,7 @@ At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The
 
 Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval `{s_0, ..., s_n}`, the vectors are defined as:
 
-V_j = [ ν_j(s_0), ..., ν_j(s_n) ], R = [ ℛ(s_0), ..., ℛ(s_n) ]
+`V_j = [ ν_j(s_0), ..., ν_j(s_n) ], R = [ ℛ(s_0), ..., ℛ(s_n) ]`
 
 
 
