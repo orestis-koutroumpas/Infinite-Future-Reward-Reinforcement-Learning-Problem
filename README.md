@@ -75,7 +75,7 @@ The following plots shows the learning curve for 𝜈1(𝑆) and 𝜈2(𝑆) wit
 The following plots show the approximations for 𝜈1(𝑆) and 𝜈2(𝑆) obtained from both the numerical method and the neural network (NN) approximation.
 
 - Approximations of 𝜈1(𝑆)
-- 
+
    <div style="display: flex; justify-content: space-between; text-align: center;">
       <img src="screenshots/v1.png" alt="Approximation for V1(X)" width="80%" height="80%">
    </div>
