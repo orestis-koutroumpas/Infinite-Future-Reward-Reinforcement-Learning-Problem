@@ -14,16 +14,6 @@ Where 𝑊𝑡∼𝑁(0,1).
 
 At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The goal is to solve for the optimal action policy that maximizes the expected reward.
 
-The problem is defined as:
-
-𝜈𝑗(𝑋) = 𝔼_𝑆𝑡+1^𝑗 [ℛ(𝑆𝑡+1) + 𝛾 𝑚𝑎𝑥{𝜈1(𝑆𝑡+1), 𝜈2(𝑆𝑡+1)} | 𝑆𝑡 = 𝑋], 𝑗=1,2
-
-The optimal action policy is:
-
-𝑎𝑡 = 𝑎𝑟𝑔𝑚𝑎𝑥 { 𝜈1(𝑆𝑡), 𝜈2(𝑆𝑡) }
-
-That is, at time 𝑡, choose 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡), otherwise choose 𝑎𝑡=2.
-
 ## Methodology
 
 ### Numerical Approach
