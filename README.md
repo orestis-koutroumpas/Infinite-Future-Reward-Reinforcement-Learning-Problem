@@ -18,17 +18,27 @@ At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The
 
 ### Numerical Approach
 
-Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval {𝑠0,…,𝑠𝑛},, the vectors are defined as:
+Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval \(\{s_0, \dots, s_n\}\), the vectors are defined as:
 
-𝑉𝑗=[𝜈𝑗(𝑠0)⋮𝜈𝑗(𝑠𝑛)], 𝑅=[ℛ(𝑠0)⋮ℛ(𝑠𝑛)]
+\[
+V_j = \begin{bmatrix} \nu_j(s_0) \\ \vdots \\ \nu_j(s_n) \end{bmatrix}, \quad R = \begin{bmatrix} \mathcal{R}(s_0) \\ \vdots \\ \mathcal{R}(s_n) \end{bmatrix}
+\]
 
-The matrices ℱ𝑗, for j = 1, 2 are calculated based on the difference in transition probabilities.
+The matrices \(\mathcal{F}_j\), for \(j = 1, 2\), are calculated based on the difference in transition probabilities:
 
-ℱ𝑗1𝑘=0.5(𝐻𝑘(𝑠1|𝑠𝑗)−𝐻𝑘(𝑠0|𝑠𝑗)),𝑘=1,2 
+\[
+\mathcal{F}_j^{1k} = 0.5 \left( H_k(s_1 | s_j) - H_k(s_0 | s_j) \right), \quad k=1,2
+\]
 
-ℱ𝑗𝑛𝑘=0.5(𝐻𝑘(𝑠𝑛|𝑠𝑗)−𝐻𝑘(𝑠𝑛−1|𝑠𝑗)),𝑘=1,2 
+\[
+\mathcal{F}_j^{nk} = 0.5 \left( H_k(s_n | s_j) - H_k(s_{n-1} | s_j) \right), \quad k=1,2
+\]
 
-ℱ𝑗𝑖𝑘=0.5(𝐻𝑘(𝑠𝑖|𝑠𝑗)−𝐻𝑘(𝑠𝑖−2|𝑠𝑗)),𝑘=1,2,
+\[
+\mathcal{F}_j^{ik} = 0.5 \left( H_k(s_i | s_j) - H_k(s_{i-2} | s_j) \right), \quad k=1,2
+\]
+
+
 
 𝑖=2,…,𝑛−1
 
