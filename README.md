@@ -18,25 +18,8 @@ At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The
 
 ### Numerical Approach
 
-Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval \(\{s_0, \dots, s_n\}\), the vectors are defined as:
+Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval `{s_0, ..., s_n}`, the vectors are defined as:
 
-\[
-V_j = \begin{bmatrix} \nu_j(s_0) \\ \vdots \\ \nu_j(s_n) \end{bmatrix}, \quad R = \begin{bmatrix} \mathcal{R}(s_0) \\ \vdots \\ \mathcal{R}(s_n) \end{bmatrix}
-\]
-
-The matrices \(\mathcal{F}_j\), for \(j = 1, 2\), are calculated based on the difference in transition probabilities:
-
-\[
-\mathcal{F}_j^{1k} = 0.5 \left( H_k(s_1 | s_j) - H_k(s_0 | s_j) \right), \quad k=1,2
-\]
-
-\[
-\mathcal{F}_j^{nk} = 0.5 \left( H_k(s_n | s_j) - H_k(s_{n-1} | s_j) \right), \quad k=1,2
-\]
-
-\[
-\mathcal{F}_j^{ik} = 0.5 \left( H_k(s_i | s_j) - H_k(s_{i-2} | s_j) \right), \quad k=1,2
-\]
 
 
 𝑖=2,…,𝑛−1
