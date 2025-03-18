@@ -18,17 +18,7 @@ At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The
 
 ### Numerical Approach
 
-Numerical solutions are computed for the expected rewards using the transition functions and the reward function. For a sampling interval `{s_0, ..., s_n}`, the vectors are defined as:
-
-`V_j = [ ν_j(s_0), ..., ν_j(s_n) ], R = [ ℛ(s_0), ..., ℛ(s_n) ]`
-
-
-
-The matrices `ℱ_j`, for `j = 1, 2`, are calculated based on the difference in transition probabilities:
-
-
-
-𝑖=2,…,𝑛−1
+Numerical solutions are computed for the expected rewards using the transition functions and the reward function. 
 
 Then 𝑉𝑗 = ℱ𝑗(𝑅 + 𝛾 𝑚𝑎𝑥{𝑉1, 𝑉2}), 𝑗 = 1,2. Where max{𝑉1,𝑉2} is taken horizontally on the corresponding elements of the vectors.
 
@@ -36,7 +26,7 @@ The iterative solution of the equation, starting with 𝑉1, 𝑉2 zero vectors,
 
 ### Data-Driven Approach
 
-The data-driven approach uses neural networks 𝑢(𝑋,𝜃𝜊^𝑗) to approximate 𝜈𝑗(𝑋) i.e., 𝜔(𝑢(𝑋,𝜃𝜊^𝑗)) ≈ 𝜈𝑗(𝑋). The networks are trained to approximate the expected rewards for each state. The optimization algorithm used is Gradient Descent.
+The data-driven approach uses neural networks 𝑢(𝑋,𝜃𝜊^j) to approximate 𝜈𝑗(𝑋) i.e., 𝜔(𝑢(𝑋,𝜃𝜊^𝑗)) ≈ 𝜈𝑗(𝑋). The networks are trained to approximate the expected rewards for each state. The optimization algorithm used is Gradient Descent.
 
 ### Conditional Expectation Functions
 
