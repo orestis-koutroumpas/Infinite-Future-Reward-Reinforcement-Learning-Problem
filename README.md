@@ -24,6 +24,10 @@ Numerical solutions are computed for the expected rewards using the transition f
 
 
 
+The matrices `ℱ_j`, for `j = 1, 2`, are calculated based on the difference in transition probabilities:
+
+
+
 𝑖=2,…,𝑛−1
 
 Then 𝑉𝑗 = ℱ𝑗(𝑅 + 𝛾 𝑚𝑎𝑥{𝑉1, 𝑉2}), 𝑗 = 1,2. Where max{𝑉1,𝑉2} is taken horizontally on the corresponding elements of the vectors.
